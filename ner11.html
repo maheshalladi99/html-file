@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.description{
+text-align: center;
+color: green;
+font-family: "Times New Roman", Times, serif;
+}  
+
+.image{
+text-align: center;
+} 
+
+.fot{
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+}
+.contact{
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header" id="myHeader">
+  <h2>My Header</h2>
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<div class="description">
+<h2>
+<pre>
+<p>your complete description
+A restaurant or an eatery, is a business that prepares and serves food and drinks to customers.
+ ... (e.g., major fast food chains, diners, hotel restaurants, and airport restaurants). ... 
+ "Definition of RESTAURANT". www.merriam-webster.com.</p></h2>
+</div>
+	<div class="image" id="myHeader" >
+	<img src="1.jpg" alt="Girl in a jacket" width="600" height="600">
+	
+	<img src="2.jpg" alt="Girl in a jacket" width="600" height="600">
+	
+	<img src="3.jpg" alt="Girl in a jacket" width="600" height="600">
+	</div>
+</pre>
+<div class ="fot">
+<p>
+<h1>get the taste of your food without eating, we cook ,we serve, you fell in love with that.</h1>
+</p>
+
+<div class="contact">
+<a  href="norder.html">Clickhere to order the food</a>
+</body>
+</html>
